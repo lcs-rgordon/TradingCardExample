@@ -31,6 +31,7 @@ struct CardDetailView: View {
                     .fontWeight(.bold)
                 
                 // Style description
+                // "description"
                 Text("Having a sunny disposition, Mr. Sunglasses likes to cruise the highways of California in his vintage convertible.")
                 
                 // Age
@@ -39,6 +40,7 @@ struct CardDetailView: View {
                     .fontWeight(.bold)
                 
                 // Age description
+                // "age"
                 Text("27")
 
                 // Height
@@ -47,14 +49,16 @@ struct CardDetailView: View {
                     .fontWeight(.bold)
                 
                 // Height description
+                // "height"
                 Text("180 cm")
 
-                // Height
+                // Sign
                 Text("Sign")
                     .font(.title2.smallCaps())
                     .fontWeight(.bold)
                 
-                // Height description
+                // Sign description
+                // "sign"
                 Text("Pisces")
 
             }
@@ -67,6 +71,8 @@ struct CardDetailView: View {
         .padding()
         // Background
         .background(
+            
+            // "color"
             Color("Peach")
         )
         // Trim sharp edges of VStack box
@@ -81,6 +87,7 @@ struct CardDetailView: View {
         // Move in from edges
         .padding()
         // Nav title
+        // "name"
         .navigationTitle("Mr. Sunglasses")
 
     }

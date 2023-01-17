@@ -11,6 +11,7 @@
 		81715EDD2976DCAD00D4B83B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81715EDC2976DCAD00D4B83B /* Assets.xcassets */; };
 		81715EE02976DCAD00D4B83B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81715EDF2976DCAD00D4B83B /* Preview Assets.xcassets */; };
 		81715EE82976DCDA00D4B83B /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81715EE72976DCDA00D4B83B /* CardDetailView.swift */; };
+		81715EEB2976ED7400D4B83B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81715EEA2976ED7400D4B83B /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		81715EDC2976DCAD00D4B83B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81715EDF2976DCAD00D4B83B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81715EE72976DCDA00D4B83B /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		81715EEA2976ED7400D4B83B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				81715ED82976DCAB00D4B83B /* TradingCardExampleApp.swift */,
+				81715EE92976ED0B00D4B83B /* Model */,
 				81715EE62976DCCA00D4B83B /* Views */,
 				81715EDC2976DCAD00D4B83B /* Assets.xcassets */,
 				81715EDE2976DCAD00D4B83B /* Preview Content */,
@@ -73,6 +76,14 @@
 				81715EE72976DCDA00D4B83B /* CardDetailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		81715EE92976ED0B00D4B83B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81715EEA2976ED7400D4B83B /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81715ED92976DCAB00D4B83B /* TradingCardExampleApp.swift in Sources */,
+				81715EEB2976ED7400D4B83B /* Card.swift in Sources */,
 				81715EE82976DCDA00D4B83B /* CardDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
