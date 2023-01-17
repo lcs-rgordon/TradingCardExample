@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct CardDetailView: View {
+    
+    // MARK: Stored property
+    // Information to show on the card
+    let cardToShow: Card
+    
+    // MARK: Computed property
+    // Describes the user interface
     var body: some View {
         
         VStack(spacing: 20) {
@@ -21,7 +28,7 @@ struct CardDetailView: View {
             
             // Character name
             // "emoji"
-            Text("😎")
+            Text(cardToShow.emoji)
                 .font(Font.custom("Helvetica", size: 144.0, relativeTo: .largeTitle))
             
             Group {
@@ -33,7 +40,7 @@ struct CardDetailView: View {
                 
                 // Style description
                 // "description"
-                Text("Having a sunny disposition, Mr. Sunglasses likes to cruise the highways of California in his vintage convertible.")
+                Text(cardToShow.description)
                 
                 // Age
                 Text("Age")
@@ -42,7 +49,7 @@ struct CardDetailView: View {
                 
                 // Age description
                 // "age"
-                Text("27")
+                Text(cardToShow.age)
 
                 // Height
                 Text("Height")
@@ -51,7 +58,7 @@ struct CardDetailView: View {
                 
                 // Height description
                 // "height"
-                Text("180 cm")
+                Text(cardToShow.height)
 
                 // Sign
                 Text("Sign")
@@ -60,7 +67,7 @@ struct CardDetailView: View {
                 
                 // Sign description
                 // "sign"
-                Text("Pisces")
+                Text(cardToShow.sign)
 
             }
             
@@ -74,7 +81,7 @@ struct CardDetailView: View {
         .background(
             
             // "color"
-            Color("Peach")
+            cardToShow.color
         )
         // Trim sharp edges of VStack box
         .clipShape(
@@ -89,7 +96,7 @@ struct CardDetailView: View {
         .padding()
         // Nav title
         // "name"
-        .navigationTitle("Mr. Sunglasses")
+        .navigationTitle(cardToShow.name)
 
     }
 }
@@ -97,7 +104,7 @@ struct CardDetailView: View {
 struct CardDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CardDetailView()
+            CardDetailView(cardToShow: cryingPerson)
         }
     }
 }
