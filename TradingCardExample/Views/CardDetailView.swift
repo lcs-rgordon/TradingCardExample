@@ -20,6 +20,7 @@ struct CardDetailView: View {
             }
             
             // Character name
+            // "emoji"
             Text("😎")
                 .font(Font.custom("Helvetica", size: 144.0, relativeTo: .largeTitle))
             
